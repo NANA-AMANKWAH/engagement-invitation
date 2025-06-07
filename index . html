@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Francis & Ruth - Engagement</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="couple.JPG" alt="Francis and Ruth" class="couple-photo">
+        <h1>Francis ❤️ Ruth</h1>
+        <p class="subtitle">You are warmly invited to our engagement ceremony</p>
+        <div class="countdown" id="countdown">
+            <div><span id="days">00</span><small>Days</small></div>
+            <div><span id="hours">00</span><small>Hours</small></div>
+            <div><span id="minute">00</span><small>Minutes</small></div>
+            <div><span id="seconds">00</span><small>Seconds</small></div>
+        </div>
+        <blockquote>
+            "Therefore what God has joined together,<br> let no one separate." -Mark 10:9 </br>
+        </blockquote>
+        <a href="http://meet.google.com/ter-qipr-ukn" target="_blank" class="meet-button">Join on Google meet</a>
+        <footer>
+            <p>Happening Live in Ghana & UK</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

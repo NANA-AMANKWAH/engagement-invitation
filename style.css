@@ -1,0 +1,74 @@
+body{
+    background: linear-gradient(to bottom right, #fff0f5);
+    font-family: 'Georgia', serif;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+}
+.container{
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+.couple-photo{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 6px solid goldenrod;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+h1{
+    color: goldenrod;
+    font-size: 36px;
+    margin: 0;
+}
+.heart{
+    color: red;
+    font-size: 32px;
+}
+.invitation-text{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#countdown div{
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.5rem;
+    color: #444;
+    font-weight: bold;
+}
+blockquote{
+    font-style: italic;
+    color: #666;
+    margin-bottom: 30px;
+}
+.meet-button{
+    display: inline-block;
+    background-color: green;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.meet-button:hover{
+    background: #a00000;
+}
+.location-text{
+    font-size: 16px;
+    margin-top: 20px;
+}
+h1.name{
+    font-family: 'cinzel',serif;
+    color: goldenrod;
+}
+.subtitle{
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.2rem;
+    color: #333;
+}
