@@ -16,13 +16,24 @@
         <div class="countdown" id="countdown">
             <div><span id="days">00</span><small>Days</small></div>
             <div><span id="hours">00</span><small>Hours</small></div>
-            <div><span id="minute">00</span><small>Minutes</small></div>
+            <div><span id="minutes">00</span><small>Minutes</small></div>
             <div><span id="seconds">00</span><small>Seconds</small></div>
         </div>
         <blockquote>
             "Therefore what God has joined together,<br> let no one separate." -Mark 10:9 </br>
-        </blockquote>
-        <a href="http://meet.google.com/ter-qipr-ukn" target="_blank" class="meet-button">Join on Google meet</a>
+        </blockquote> 
+        <section class="join-meet">
+            <button onclick="showPreview()" class="meet-link">Join Google Meet</button>
+        </section>
+        <div id="preview-overlay">
+            <div class="preview-slideshow">
+                <img src="Love1.jpg" class="slide-img"/>
+                <img src="Love2.jpg" class="slide-img"/>
+                <img src="Love3.jpg" class="slide-img"/>
+            </div>
+            <P>Opening Google Meet Shortly</P>
+            <button onclick="continueToMeet()" class="continue-btn">Continue to Meet</button>
+        </div>
         <footer>
             <p>Happening Live in Ghana & UK</p>
         </footer>

@@ -47,16 +47,17 @@ blockquote{
     color: #666;
     margin-bottom: 30px;
 }
-.meet-button{
-    display: inline-block;
+.meet-link{
     background-color: green;
     color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: backgroud-color 0.3s ease;
 }
-.meet-button:hover{
+.meet-link:hover{
     background: #a00000;
 }
 .location-text{
@@ -71,4 +72,66 @@ h1.name{
     font-family: 'Great Vibes', cursive;
     font-size: 1.2rem;
     color: #333;
+}
+#preview-overlay{
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.95);
+    z-index:9999;
+    text-align: center;
+    padding-top: 50px;
+}
+.preview-slideshow{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+}
+.slide-img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(255,255,255,0.2);
+}
+.continue-btn{
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+.model{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+}
+.preview-img{
+    display: none;
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.preview-img.active{
+    display: block;
 }
