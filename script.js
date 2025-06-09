@@ -18,3 +18,37 @@ const timer = setInterval(function () {
         document.getElementById("countdown").innerHTML = "<h3>🎉 It's Time!🎉</h3>";
     }
 }, 1000);
+
+let current = 0;
+const slides = document.querySelectorAll(".slideshow img");
+
+setInterval(() =>{
+    slides[current].style.display ="none";
+    current = (current + 1) % slides.length;
+    slides[current].style.display = "block";
+}, 1500);
+
+function showPreview() {
+    const modal = document.getElementById("previewModal");
+    const images = document.querySelectorAll(".slide-img");
+    let currentIndex = 0;
+  
+    modal.style.display = "flex";
+  
+    function showImage(index) {
+      images.forEach((img, i) => {
+        img.classList.toggle("active", i === index);
+      });
+    }
+  
+    showImage(currentIndex);
+    const interval = setInterval(() => {
+      currentIndex++;
+      if (currentIndex < images.length) {
+        showImage(currentIndex);
+      } else {
+        clearInterval(interval);
+        window.location.href = "https://meet.google.com/ter-qipr-ukn";
+      }
+    }, 1500);
+  }
