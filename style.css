@@ -1,137 +1,95 @@
-body{
-    background: linear-gradient(to bottom right, #fff0f5);
-    font-family: 'Georgia', serif;
+body {
+    font-family: 'Cinzel', serif;
+    background: #fbeee0;
+    color: #5b3e31;
     text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
     padding: 20px;
-    color: #333;
-}
-.container{
     max-width: 600px;
     margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.5);
-}
-.couple-photo{
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 6px solid goldenrod;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-h1{
-    color: goldenrod;
-    font-size: 36px;
-    margin: 0;
-}
-.heart{
-    color: red;
-    font-size: 32px;
-}
-.invitation-text{
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-#countdown div{
-    display: inline-block;
-    margin: 10px;
-    font-size: 1.5rem;
-    color: #444;
-    font-weight: bold;
-}
-blockquote{
-    font-style: italic;
-    color: #666;
-    margin-bottom: 30px;
-}
-.meet-link{
-    background-color: green;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: backgroud-color 0.3s ease;
-}
-.meet-link:hover{
-    background: #a00000;
-}
-.location-text{
-    font-size: 16px;
-    margin-top: 20px;
-}
-h1.name{
-    font-family: 'cinzel',serif;
-    color: goldenrod;
-}
-.subtitle{
-    font-family: 'Great Vibes', cursive;
-    font-size: 1.2rem;
-    color: #333;
-}
-#preview-overlay{
-    display: none;
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.95);
-    z-index:9999;
-    text-align: center;
-    padding-top: 50px;
-}
-.preview-slideshow{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 20px;
-}
-.slide-img{
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(255,255,255,0.2);
-}
-.continue-btn{
-    margin-top: 20px;
-    padding: 12px 25px;
-    font-size: 18px;
-    border: none;
-    background: #fff;
-    cursor: pointer;
-}
-.model{
-    display: none;
-    position: fixed;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.85);
-    justify-content: center;
-    align-items: center;
-}
-.modal-content{
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 600px;
-    width: 90%;
-}
-.preview-img{
-    display: none;
+  }
+  
+  .couple-photo {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
-    margin-bottom: 10px;
-}
-.preview-img.active{
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+    margin: 10px 0;
+  }
+  
+  .subtitle {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+  }
+  
+  .countdown {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .countdown div {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .join-meet .meet-link,
+  .continue-btn {
+    background: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .meet-link:hover,
+  .continue-btn:hover {
+    background: #218838;
+  }
+  
+  .preview-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  
+  .preview-slideshow img {
+    width: 300px;
+    height: auto;
+    display: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .preview-img.active {
     display: block;
-}
+  }
+  
+  blockquote {
+    margin: 20px auto;
+    font-style: italic;
+    color: #444;
+  }
