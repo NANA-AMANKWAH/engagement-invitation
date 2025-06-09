@@ -52,3 +52,10 @@ function showPreview() {
       }
     }, 1500);
   }
+
+  function showPreview() {
+    document.querySelector(".preview-container").style.display = "block";
+  }
+  function continueToMeet() {
+    window.location.href = "https://meet.google.com/ter-qipr-ukn";
+  }
